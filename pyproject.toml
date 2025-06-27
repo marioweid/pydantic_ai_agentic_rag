@@ -1,0 +1,19 @@
+[project]
+name = "pydanticai-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Weidner, Mario", email = "mario.weidner@hm.edu" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic-ai[examples,logfire]>=0.3.4",
+]
+
+[project.scripts]
+pydanticai-rag = "pydanticai_rag:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
